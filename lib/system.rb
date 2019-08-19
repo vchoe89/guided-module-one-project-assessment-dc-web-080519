@@ -1,4 +1,4 @@
 class System < ActiveRecord::Base
-    has_many :availableon
-    has_many :games, through: :availableon
+    has_many :availableons
+    has_many :games, through: :availableons
 end

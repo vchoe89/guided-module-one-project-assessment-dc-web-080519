@@ -1,6 +1,6 @@
-class CreateSystem < ActiveRecord::Migration[5.2]
+class CreateSystems < ActiveRecord::Migration[5.2]
   def change
-    create_table :system do |s|
+    create_table :systems do |s|
       s.string :name
     end
   end

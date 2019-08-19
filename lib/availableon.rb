@@ -1,4 +1,4 @@
-#class Availableon < ActiveRecord::Base
- #   belongs_to :games
-  #  belongs_to :system
-#end
+class Availableon < ActiveRecord::Base
+  belongs_to :game
+  belongs_to :system
+end
