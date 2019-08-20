@@ -1,4 +1,5 @@
 #Games
+Game.destroy_all
 fortnite = Game.find_or_create_by(name:"Fortnite", category:"Action")
 pubg = Game.find_or_create_by(name:"PlayerUnknown's Battlegrounds", category:"Action")
 bttlefld1942 = Game.find_or_create_by(name:"Battlefield 1942", category:"Action")
@@ -34,6 +35,7 @@ civil = Game.find_or_create_by(name:"Civilization VI", category:"Strategy")
 csgo = Game.find_or_create_by(name:"Counter-Strike: Global Offensive", category:"Strategy")
 
 #Systems
+System.destroy_all
 pc = System.find_or_create_by(name:"PC")
 ps4 = System.find_or_create_by(name:"PlayStation 4")
 xb1 = System.find_or_create_by(name:"Xbox One")
@@ -46,4 +48,4 @@ swi = System.find_or_create_by(name:"Nintendo Switch")
 # Availableon.find_or_create_by(system_id: swi.id, game_id: fortnite)
 # Availableon.find_or_create_by(system_id: pc.id, game_id: bttlefld1942)
 
-binding.pry
+#binding.pry
