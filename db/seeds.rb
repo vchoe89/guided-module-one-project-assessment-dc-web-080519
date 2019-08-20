@@ -55,7 +55,7 @@ swi = System.find_or_create_by(name:"Nintendo Switch")
 pc.games = [pubg, bttlefld1942, apex, red_dead, cod, star_wars, sea_of_thieves, minecraft, snipperclips, 
     anthem, cyberpunk, stardew_valley, overcooked2, rkt_league, sc2, csgo]
 
-    ps4.games = [fortnite, bttlefld1942, apex, red_dead, cod, star_wars, gow, last_of_us, spiderman,
+ps4.games = [fortnite, bttlefld1942, apex, red_dead, cod, star_wars, gow, last_of_us, spiderman,
  solitude, wolf_among_us, kingdom_hearts, anthem, cyberpunk, stardew_valley, cites, 
  overcooked2, rkt_league, mdn19, nba2k, fifa]
 
