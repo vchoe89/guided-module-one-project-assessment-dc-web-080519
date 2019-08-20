@@ -12,11 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_08_20_163857) do
 
-  create_table "availableons", force: :cascade do |t|
-    t.integer "game_id"
-    t.integer "system_id"
-  end
-
   create_table "categories", force: :cascade do |t|
     t.string "name"
   end
@@ -24,6 +19,12 @@ ActiveRecord::Schema.define(version: 2019_08_20_163857) do
   create_table "games", force: :cascade do |t|
     t.string "name"
     t.string "category"
+    t.integer "categories_id"
+  end
+
+  create_table "gamesystems", force: :cascade do |t|
+    t.integer "game_id"
+    t.integer "system_id"
   end
 
   create_table "systems", force: :cascade do |t|
