@@ -40,8 +40,7 @@ pc = System.find_or_create_by(name:"PC")
 ps4 = System.find_or_create_by(name:"PlayStation 4")
 xb1 = System.find_or_create_by(name:"Xbox One")
 swi = System.find_or_create_by(name:"Nintendo Switch")
-# binding.pry
-0
+7e79310d3b327fcb8cc3253ee3f57b0d
 #Availableons
 # Availableon.find_or_create_by_by(system_id: pc.id, game_id: pubg.id)
 # Availableon.find_or_create_by(system_id: pc.id, game_id: fortnite)
@@ -50,6 +49,7 @@ swi = System.find_or_create_by(name:"Nintendo Switch")
 # Availableon.find_or_create_by(system_id: swi.id, game_id: fortnite)
 # Availableon.find_or_create_by(system_id: pc.id, game_id: bttlefld1942)
 
+<<<<<<< HEAD
 # binding.pry
 
 pc.games = [pubg, bttlefld1942, apex, red_dead, cod, star_wars, sea_of_thieves, minecraft, snipperclips, anthem, cyberpunk, stardew_valley, overcooked2, rkt_league, sc2, csgo]
@@ -58,3 +58,5 @@ xb1.games = [fortnite, bttlefld1942, red_dead, star_wars, solitude, outer_wilds,
 swi.games = [fortnite, zelda, mario_kart, super_mario, tetri, snipperclips, stardew_valley, cites, overcooked2, fifa, civil]
 
 binding.pry
+=======
+#binding.pr3ee3f57b0d
