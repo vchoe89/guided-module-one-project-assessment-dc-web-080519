@@ -40,8 +40,8 @@ pc = System.find_or_create_by(name:"PC")
 ps4 = System.find_or_create_by(name:"PlayStation 4")
 xb1 = System.find_or_create_by(name:"Xbox One")
 swi = System.find_or_create_by(name:"Nintendo Switch")
-binding.pry
-0
+#binding.pry
+#0
 #Availableons
 # Availableon.find_or_create_by_by(system_id: pc.id, game_id: pubg.id)
 # Availableon.find_or_create_by(system_id: pc.id, game_id: fortnite)
@@ -50,9 +50,9 @@ binding.pry
 # Availableon.find_or_create_by(system_id: swi.id, game_id: fortnite)
 # Availableon.find_or_create_by(system_id: pc.id, game_id: bttlefld1942)
 
-binding.pry
-
+#binding.pry
+#Availableons
 pc.games = [pubg, bttlefld1942, apex, red_dead, cod, star_wars, sea_of_thieves, minecraft, snipperclips, anthem, cyberpunk, stardew_valley, overcooked2, rkt_league, sc2, csgo]
 ps4.games = [fortnite, bttlefld1942, apex, red_dead, cod, star_wars, gow, last_of_us, spiderman, solitude, wolf_among_us, kingdom_hearts, anthem, cyberpunk, stardew_valley, cites, overcooked2, rkt_league, mdn19, nba2k, fifa]
-xb1.games = [fortnite, bttlefld1942, red_dead, star_wars, solitude, outer_wilds, wolf_among_us, kingdom_hearts, anthem, cyberpunk, stardew_valley, cites, overcooked2, rkt_league, mdn19, nba, fifa]
+xb1.games = [fortnite, bttlefld1942, red_dead, star_wars, solitude, outer_wilds, wolf_among_us, kingdom_hearts, anthem, cyberpunk, stardew_valley, cites, overcooked2, rkt_league, mdn19, nba2k, fifa]
 swi.games = [fortnite, zelda, mario_kart, super_mario, tetri, snipperclips, stardew_valley, cites, overcooked2,fifa, civil]
