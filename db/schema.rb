@@ -10,11 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_19_182153) do
+ActiveRecord::Schema.define(version: 2019_08_20_163857) do
 
   create_table "availableons", force: :cascade do |t|
     t.integer "game_id"
     t.integer "system_id"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
   end
 
   create_table "games", force: :cascade do |t|
