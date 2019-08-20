@@ -1,4 +1,4 @@
-class GameSystem < ActiveRecord::Base
+class Gamesystem < ActiveRecord::Base
   belongs_to :game
   belongs_to :system
 end

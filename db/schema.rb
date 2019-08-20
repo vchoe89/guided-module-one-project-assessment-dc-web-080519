@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_163857) do
 
   create_table "games", force: :cascade do |t|
     t.string "name"
-    t.string "category"
-    t.integer "categories_id"
+    t.integer "category_id"
   end
 
   create_table "gamesystems", force: :cascade do |t|

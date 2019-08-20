@@ -1,6 +1,15 @@
+#Categories
+action = Category.find_or_create_by(name:"Action")
+action_adventure = Category.find_or_create_by(name:"Action-Adventure")
+adventure = Category.find_or_create_by(name:"Adventure")
+puzzle = Category.find_or_create_by(name:"Puzzle")
+rpg = Category.find_or_create_by(name:"Role-Playing")
+simulation = Category.find_or_create_by(name:"Simulation")
+sports = Category.find_or_create_by(name:"Sports")
+strategy = Category.find_or_create_by(name:"Strategy")
+
 #Games
 Game.destroy_all
-
 fortnite = Game.find_or_create_by(name:"Fortnite", category_id: action.id)
 pubg = Game.find_or_create_by(name:"PlayerUnknown's Battlegrounds", category_id: action.id)
 bttlefld1942 = Game.find_or_create_by(name:"Battlefield 1942", category_id: action.id)
@@ -8,32 +17,32 @@ apex = Game.find_or_create_by(name:"APEX Legends", category_id: action.id)
 red_dead = Game.find_or_create_by(name:"Red Dead Redemption 2", category_id: action.id)
 cod = Game.find_or_create_by(name:"Call of Duty: WWII", category_id: action.id)
 star_wars = Game.find_or_create_by(name:"Star Wars Battlefront II", category_id: action.id)
-gow = Game.find_or_create_by(name:"God of War", category_id: action-adventure.id)
-last_of_us = Game.find_or_create_by(name:"The Last of Us", category_id: action-adventure.id
-spiderman = Game.find_or_create_by(name:"Spiderman", category_id: action-adventure.id)
-sea_of_thieves = Game.find_or_create_by(name:"Sea of Thieves", category_id: action-adventure.id)
-zelda = Game.find_or_create_by(name:"The Legend of Zelda: Breath of the Wild", category_id: action-adventure.id)
-mario_kart = Game.find_or_create_by(name:"Mario Kart 8 Deluxe", category_id: action-adventure.id)
-solitude = Game.find_or_create_by(name:"Sea of Solitude", category: adventure.id)
-outer_wilds = Game.find_or_create_by(name:"Outer Wilds", category: adventure.id)
-minecraft = Game.find_or_create_by(name:"Minecraft", category: adventure.id)
-wolf_among_us = Game.find_or_create_by(name:"The Wolf Among Us", category: adventure.id)
-super_mario = Game.find_or_create_by(name:"Super Mario Odyssey", category: adventure.id)
-tetri = Game.find_or_create_by(name:"Tetris", category: puzzle.id)
-snipperclips = Game.find_or_create_by(name:"Snipperclips", category: puzzle.id)
-kingdom_hearts = Game.find_or_create_by(name:"Kingdom Hearts III", category: role-playing.id)
-anthem = Game.find_or_create_by(name:"Anthem", category: role-playing.id)
-cyberpunk = Game.find_or_create_by(name:"Cyberpunk 2077", category: role-playing.id)
-stardew_valley = Game.find_or_create_by(name:"Stardew Valley", category: role-playing.id)
-cites = Game.find_or_create_by(name:"Cities: Skylines", category: simulation.id)
-overcooked2 = Game.find_or_create_by(name:"Overcooked 2", category: simulation.id)
-rkt_league = Game.find_or_create_by(name:"Rocket League", category: sports.id)
-mdn19 = Game.find_or_create_by(name:"Madden 19", category: sports.id)
-nba2k = Game.find_or_create_by(name:"NBA 2K18", category: sports.id)
-fifa = Game.find_or_create_by(name:"FIFA 18", category: sports.id)
-sc2 = Game.find_or_create_by(name:"StarCraft 2", category: strategy.id)
-civil = Game.find_or_create_by(name:"Civilization VI", category: strategy.id))
-csgo = Game.find_or_create_by(name:"Counter-Strike: Global Offensive", category: strategy.id))
+gow = Game.find_or_create_by(name:"God of War", category_id: action_adventure.id)
+last_of_us = Game.find_or_create_by(name:"The Last of Us", category_id: action_adventure.id)
+spiderman = Game.find_or_create_by(name:"Spiderman", category_id: action_adventure.id)
+sea_of_thieves = Game.find_or_create_by(name:"Sea of Thieves", category_id: action_adventure.id)
+zelda = Game.find_or_create_by(name:"The Legend of Zelda: Breath of the Wild", category_id: action_adventure.id)
+mario_kart = Game.find_or_create_by(name:"Mario Kart 8 Deluxe", category_id: action_adventure.id)
+solitude = Game.find_or_create_by(name:"Sea of Solitude", category_id: adventure.id)
+outer_wilds = Game.find_or_create_by(name:"Outer Wilds", category_id: adventure.id)
+minecraft = Game.find_or_create_by(name:"Minecraft", category_id: adventure.id)
+wolf_among_us = Game.find_or_create_by(name:"The Wolf Among Us", category_id: adventure.id)
+super_mario = Game.find_or_create_by(name:"Super Mario Odyssey", category_id: adventure.id)
+tetri = Game.find_or_create_by(name:"Tetris", category_id: puzzle.id)
+snipperclips = Game.find_or_create_by(name:"Snipperclips", category_id: puzzle.id)
+kingdom_hearts = Game.find_or_create_by(name:"Kingdom Hearts III", category_id: rpg.id)
+anthem = Game.find_or_create_by(name:"Anthem", category_id: rpg.id)
+cyberpunk = Game.find_or_create_by(name:"Cyberpunk 2077", category_id: rpg.id)
+stardew_valley = Game.find_or_create_by(name:"Stardew Valley", category_id: rpg.id)
+cites = Game.find_or_create_by(name:"Cities: Skylines", category_id: simulation.id)
+overcooked2 = Game.find_or_create_by(name:"Overcooked 2", category_id: simulation.id)
+rkt_league = Game.find_or_create_by(name:"Rocket League", category_id: sports.id)
+mdn19 = Game.find_or_create_by(name:"Madden 19", category_id: sports.id)
+nba2k = Game.find_or_create_by(name:"NBA 2K18", category_id: sports.id)
+fifa = Game.find_or_create_by(name:"FIFA 18", category_id: sports.id)
+sc2 = Game.find_or_create_by(name:"StarCraft 2", category_id: strategy.id)
+civil = Game.find_or_create_by(name:"Civilization VI", category_id: strategy.id)
+csgo = Game.find_or_create_by(name:"Counter-Strike: Global Offensive", category_id: strategy.id)
 
 #Systems
 System.destroy_all
@@ -44,15 +53,8 @@ swi = System.find_or_create_by(name:"Nintendo Switch")
 
 
 
-#Categories
-action = Category.new("Action")
-action-adventure = Category.new("Action-Adventure")
-adventure = Category.new("Adventure")
-puzzle = Category.new("Puzzle")
-role-playing = Category.new("Role-Playing")
-simulation = Category.new("Simulation")
-sports = Category.new("Sports")
-strategy = Category.new("Strategy")
+
+# binding.pry
 
 
 
