@@ -32,5 +32,24 @@ class CommandLineInterface
       #2 Nintendo Switch (prints all swi)
       #3 PlayStation 4 (prints all ps4)
       #4 Xbox One (prints all xb1)
-      
+
+   #2.2 Find by name
+      #"Enter the title you are looking for."
+      # User can type in a name
+      # Compares input to games table
+      # If found, print out name, category, system
+      # If not found, "Sorry, that title is not in our system."
+      ###Maybe ask if they would like to add the searched game into library and route to add_game method###
+   
+   #2.3 Find by category
+      # "Which category would you like to search by?"
+      #1 Action 
+      #2 Action-Adventure
+      #3 Adventure
+      #4 Role-Playing
+      #5 Simulation
+      #6 Strategy
+      #7 Sports
+      #8 Puzzle
+      #Each number would print out the title and system it is on
 end
