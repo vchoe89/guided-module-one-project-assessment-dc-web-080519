@@ -4,13 +4,20 @@ class CommandLineInterface
       #Fancy stylistics
    end
 
-   def help
+   def first_input
       puts "How can I help you today?"
+      
       #Has user type in corresponding number to option
       #1 See all available games (Create)
       #2 Find a game (Read)
       #3 Donate a game (Update)
       #4 Checkout a game (Delete)
+      gets.chomp
+   end
+   
+   def view_options
+      puts "See all available games."
+      puts "Find a game."
    end
 
    #1 See all available games (all_games)
