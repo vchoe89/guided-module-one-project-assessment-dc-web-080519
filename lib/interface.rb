@@ -1,24 +1,39 @@
 class CommandLineInterface
    def welcome
+      puts `clear`
       puts "Welcome to the Library of Games!"
-      #Fancy stylistics
+      puts "How can I help you today?"
+      #Has user type in corresponding number to option
+      puts "1 See all available games"
+      puts "2 Find a game"
+      puts "3 Donate a game"
+      puts "4 Checkout a game"
+      puts "Please select number options 1 through 4"
+      self.input_handler
    end
 
-   def first_input
-      puts "How can I help you today?"
-      
-      #Has user type in corresponding number to option
-      #1 See all available games (Create)
-      #2 Find a game (Read)
-      #3 Donate a game (Update)
-      #4 Checkout a game (Delete)
-      gets.chomp
+   def input_handler
+      input = gets.chomp
+
+      if input == 1
+         self.see_available_games
+      end
    end
    
-   def view_options
-      puts "See all available games."
-      puts "Find a game."
+   def see_available_games
+      puts `clear`
+      Games.all.each_with_index do |game, index|
+         puts "#{index}. #{game.name}" 
+      end
+      puts "WHAT do you wanna do? enter something?"
+      self.available_games_handler
    end
+
+      # self.available_games_handler
+      #    input = gets.chomp
+      #    input == 0
+      #     self.welcome
+   
 
    #1 See all available games (all_games)
       #"Here is a list of all the available games."
