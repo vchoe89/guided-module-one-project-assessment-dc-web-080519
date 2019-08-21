@@ -45,6 +45,7 @@ class CommandLineInterface
       # User can type in a name
       # Compares input to games table
       # If found, print out name, category, system
+      # Would probably need to make own select or find method (downcasing name string and downcasing response and compare)
       # If not found, "Sorry, that title is not in our system."
       ###Maybe ask if they would like to add the searched game into library and route to add_game method###
    
@@ -59,4 +60,16 @@ class CommandLineInterface
       #7 Sports
       #8 Puzzle
       #Each number would print out the title and system it is on
+      #Each number would print out the titles and system it is on
+      ###Titles have more than one system, see if can make into list to one game (Fortnite - PC, PS4, Nintendo Switch, Xbox One)
+
+   #3 Donate a game
+      #"Oh, how nice of you to donate to our library! We need the following information:"
+      #Name
+      #Category
+      #System
+      #"Thank you for contributing to our library!"
+   #4 Checkout a game
+      # "What game would you like to check out?"
+      # User inputs name of game (will probably have to call on downcase method)
 end
