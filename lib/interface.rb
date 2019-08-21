@@ -14,7 +14,6 @@ class CommandLineInterface
 
    def input_handler
       input = gets.chomp
-
       if input == 1
          self.see_available_games
       end
