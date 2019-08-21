@@ -3,3 +3,4 @@ class Game < ActiveRecord::Base
     has_many :systems, through: :gamesystems
     belongs_to :category
 end
+        

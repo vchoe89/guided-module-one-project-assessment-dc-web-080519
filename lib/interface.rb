@@ -1,38 +1,29 @@
 class CommandLineInterface
+
+   def intialize
+   end
    def welcome
-      puts `clear`
+      prompt = TTY::Prompt.new
+      system "clear"
       puts "Welcome to the Library of Games!"
-      puts "How can I help you today?"
-      #Has user type in corresponding number to option
-      puts "1 See all available games"
-      puts "2 Find a game"
-      puts "3 Donate a game"
-      puts "4 Checkout a game"
-      puts "Please select number options 1 through 4"
-      self.input_handler
-   end
-
-   def input_handler
-      input = gets.chomp
-
-      if input == 1
-         self.see_available_games
+      sleep (1)
+      prompt.select("How can I help you today") do |menu|
+         menu.choice "See All Available Games", -> {see_all_games}
+         menu.choice "Find A Game", -> {find_game}
+         menu.choice "Donate A Game", -> {add_game}
+         menu.choice "Checkout A Game", -> {delete_game}
       end
    end
-   
-   def see_available_games
-      puts `clear`
-      Games.all.each_with_index do |game, index|
-         puts "#{index}. #{game.name}" 
-      end
-      puts "WHAT do you wanna do? enter something?"
-      self.available_games_handler
+
+   def see_all_games
+      system "clear"
+      puts "Here is the catalog of games."
+       game_list = Game.pluck(:name)
+       puts game_list
    end
 
-      # self.available_games_handler
-      #    input = gets.chomp
-      #    input == 0
-      #     self.welcome
+
+   # end
    
 
    #1 See all available games (all_games)
