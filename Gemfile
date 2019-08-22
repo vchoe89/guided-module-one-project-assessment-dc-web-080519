@@ -13,3 +13,5 @@ gem "pry"
 gem "faker"
 gem "require_all"
 gem "tty"
+gem 'tty-font'
+gem "artii"
